@@ -15,7 +15,7 @@ on:
 
 jobs:
   gh-pages:
-    if: github.repository == 'ganapathichidambaram/carbon-website'
+    #if: github.repository == 'ganapathichidambaram/carbon-website'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

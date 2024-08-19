@@ -41,7 +41,7 @@ module.exports = {
     {
       resolve: 'gatsby-theme-carbon',
       options: {
-        mdxExtensions: ['.mdx'],
+        mdxExtensions: ['.mdx','.md'],
         isServiceWorkerEnabled: false,
         iconPath: './src/images/favicon.svg',
         titleType: 'prepend',
