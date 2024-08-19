@@ -15,7 +15,7 @@ on:
 
 jobs:
   gh-pages:
-    if: github.repository == 'carbon-design-system/carbon-website'
+    if: github.repository == 'ganapathichidambaram/carbon-website'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -47,9 +47,9 @@ jobs:
           GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
           NODE_ENV: production
           CI: true
-      - name: Add CNAME record
-        run: |
-          echo 'carbondesignsystem.com' > public/CNAME
+      # - name: Add CNAME record
+      #   run: |
+      #     echo 'carbondesignsystem.com' > public/CNAME
       - name: Deploy
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
